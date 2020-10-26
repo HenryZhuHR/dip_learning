@@ -1,0 +1,11 @@
+# 
+*.a
+*.so
+
+# CMake ignore
+*.cmake
+
+# exe
+project
+
+*.log
