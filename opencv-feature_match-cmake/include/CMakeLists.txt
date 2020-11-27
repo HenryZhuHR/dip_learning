@@ -4,7 +4,7 @@ SET (LIBHELLO_SRC hello.cpp)
 
 # SET (LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
 
- 
+
 
 # three kinds of libraries:
 # 1. shared, i.e., dynamic library，动态库文件扩展名常为 "*.so"；
