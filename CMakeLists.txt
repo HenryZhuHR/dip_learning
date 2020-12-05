@@ -27,6 +27,7 @@ add_subdirectory("${PROJECT_SOURCE_DIR}/src")
 
 # -------- 3rd-part lib --------
 # Opencv4
+set(OpenCV_DIR "C:/Users/henryzhu/OneDrive/Programming/Cpp/CppLibrary/Opencv/mingw-build/install")
 find_package( OpenCV 4 REQUIRED )
 include_directories( ${OpenCV_INCLUDE_DIRS} )
 link_directories(${OpenCV_LIB_DIRS})
