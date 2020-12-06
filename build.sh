@@ -11,7 +11,7 @@ make
 
 cd ..
 
-echo "-------------------------------"
-echo "----- run the project.exe -----"
-# echo "-------------------------------"
-./project.exe
+echo ""
+echo ""
+./project.exe \
+    ./image/lena.jpg
