@@ -1,4 +1,7 @@
 build
+
 *.exe
-*.a
+*.lib
 *.dll
+*.a
+*.so
