@@ -34,7 +34,21 @@ link_directories(${OpenCV_LIB_DIRS})
 message(STATUS "OpenCV status:")
 message(STATUS "    Opencv version: ${OpenCV_VERSION}")   
 message(STATUS "    Opencv include: ${OpenCV_INCLUDE_DIRS}")
-
+# Boost
+# set(BOOST_ROOT "C:/Users/henryzhu/OneDrive/Programming/Cpp/CppLibrary/Boost/boost_1_71_0")
+# set(BOOST_INCLUDEDIR "D:/boost_1_62_0")
+# set(BOOST_LIBRARYDIR "D:/boost_1_62_0/GCC/lib")
+# # 找到boost特定版本，以及需要的子模块，1.46.1为最低版本，REQUIRED强调必须找到该模块，否则编译失败；
+# # COMPONENTS后面罗列一组子模块（这些子模块都属于boost）
+# find_package(Boost 1.46.1 REQUIRED COMPONENTS filesystem system)
+# # include_directories("D:/boost_1_62_0")
+# # link_libraries("D:/boost_1_62_0/GCC/lib/libboost_filesystem-mgw53-mt-1_62.a" "D:/boost_1_62_0/GCC/lib/libboost_system-mgw53-mt-1_62.a")
+# # 验证是否发现boost
+# if(Boost_FOUND)
+#     message ("boost found")
+# else()
+#     message (FATAL_ERROR "[INFO] Cannot find Boost")
+# endif()
 
 option(WITH_LOG "Build with output logs and images in tmp" OFF)
 if(WITH_LOG)
@@ -52,8 +66,10 @@ add_executable(${PROJECT_NAME}
     main.cpp
     )
 target_link_libraries(${PROJECT_NAME} 
-    ${OpenCV_LIBS}
     src
+    ${OpenCV_LIBS}    
+    ${Boost_SYSTEM_LIBRARY}
+    ${Boost_FILESYSTEM_LIBRARY}
     )
 
     

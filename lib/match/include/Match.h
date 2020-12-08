@@ -4,15 +4,15 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <opencv2/highgui.hpp>
-#include <opencv2/core/core.hpp>
-#include <opencv2/opencv.hpp>
+// #include <opencv2/highgui.hpp>
+// #include <opencv2/core/core.hpp>
+// #include <opencv2/opencv.hpp>
 
 class Match
 {
 private:
     /* data */
-    cv::Mat srcImage;
+    // cv::Mat srcImage;
 
 public:
     Match(/* args */);
@@ -20,7 +20,7 @@ public:
     ~Match();
 
 public:
-    cv::Mat SURF(cv::Mat src);
+    // cv::Mat SURF(cv::Mat src);
 };
 
 #endif
