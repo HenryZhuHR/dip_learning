@@ -1,13 +1,16 @@
-rm -rf build && mkdir build && cd build
+rm -rf build
+mkdir build
+rm -rf bin
+mkdir bin
+cd build
 
 cmake \
     -G "MinGW Makefiles" \
     ..
 make
 
-cd ..
-cd bin
+cd ../bin
 
 echo ""
-echo ""
+
 ./project.exe

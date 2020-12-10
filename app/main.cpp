@@ -16,9 +16,11 @@ using namespace cv;
 int main(int argc, char **argv)
 {
   unique_ptr<int> uptr_i;   //创建空智能指针
-  uptr_i.reset(new int(8)); //绑定动态对象
-
+  uptr_i.reset(new int(6)); //绑定动态对象
   cout << *uptr_i;
+
+  MyClass myc=MyClass();
+  SolutionHello();
 
   cv::Mat img_src = cv::imread("../image/pikachu.jpg", 1);
   cv::Mat img_sub = cv::imread("../image/pikachu-sub.jpg", 1);
