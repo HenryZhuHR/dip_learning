@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 #include <memory>
-using namespace std;
+// using namespace std;
 
 #include <opencv2/highgui.hpp>
 #include <opencv2/core/core.hpp>
@@ -15,9 +15,9 @@ using namespace cv;
 
 int main(int argc, char **argv)
 {
-  unique_ptr<int> uptr_i;   //创建空智能指针
+  std::unique_ptr<int> uptr_i;   //创建空智能指针
   uptr_i.reset(new int(6)); //绑定动态对象
-  cout << *uptr_i;
+  std::cout << *uptr_i<<std::endl;
 
   MyClass myc=MyClass();
   SolutionHello();

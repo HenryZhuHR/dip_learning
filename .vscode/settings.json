@@ -1,12 +1,12 @@
 {
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "files.associations": {
-        "*.json": "json",
+        "*.md": "markdown",
         "*.cjson": "jsonc",
         "*.wxss": "css",
         "*.wxs": "javascript",
+        "*.json": "json",
         "*.m": "matlab",
-        "*.md": "markdown",
         "stdio.h": "c",
         "iostream": "cpp",
         "*.tcc": "cpp",
@@ -61,7 +61,12 @@
         "iomanip": "cpp",
         "mutex": "cpp",
         "sstream": "cpp",
-        "thread": "cpp"
+        "thread": "cpp",
+        "bitset": "cpp",
+        "numeric": "cpp",
+        "random": "cpp",
+        "regex": "cpp",
+        "variant": "cpp"
     },
     // "terminal.integrated.shell.windows": "C:/Windows/System32/cmd.exe"
     "terminal.integrated.shell.windows": "C:/Users/henryzhu/Programs/Git/bin/bash.exe"
