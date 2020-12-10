@@ -10,4 +10,8 @@ https://www.cnblogs.com/zhoug2020/p/5904206.html
 
 
 # Opencv 编译
-cmake -G "MinGW Makefiles" ..
+```bash
+cmake \
+    -G "MinGW Makefiles" \
+    ..
+```

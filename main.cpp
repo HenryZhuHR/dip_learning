@@ -35,20 +35,6 @@ int main(int argc, char **argv)
   cv::imshow("sub", img_gray_sub);
   cv::waitKey(1000);
 
-  std::vector<cv::KeyPoint> keypoint1, keypoint2;
-  cv::Mat descriptor1, descriptor2;
-  cv::Ptr<cv::ORB> orb = cv::ORB::create();
-
-  orb->detect(img_src, keypoint1);
-  orb->detect(img_sub, keypoint2);
-
-  orb->compute(img_src, keypoint1, descriptor1);
-  orb->compute(img_sub, keypoint2, descriptor2);
-
-  std::vector<cv::DMatch> matches;
-  cv::BFMatcher bfMatcher(cv::NORM_HAMMING);
-  bfMatcher.match(descriptor1, descriptor2, matches);
-
   
   return 0;
 }
