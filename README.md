@@ -11,7 +11,7 @@ https://www.cnblogs.com/zhoug2020/p/5904206.html
 
 # Opencv 编译
 ```bash
-cmake \
-    -G "MinGW Makefiles" \
+
+cmake -G "MinGW Makefiles" \
     ..
 ```

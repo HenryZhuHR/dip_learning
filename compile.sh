@@ -1,7 +1,4 @@
-rm -rf build
-
-mkdir build
-cd build
+rm -rf build && mkdir build && cd build
 
 cmake \
     -G "MinGW Makefiles" \
@@ -9,6 +6,7 @@ cmake \
 make
 
 cd ..
+cd bin
 
 echo ""
 echo ""

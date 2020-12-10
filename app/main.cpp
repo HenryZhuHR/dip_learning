@@ -8,19 +8,20 @@ using namespace std;
 #include <opencv2/core/core.hpp>
 #include <opencv2/opencv.hpp>
 #include <opencv2/features2d/features2d.hpp>
-// using namespace cv;
+using namespace cv;
 
 #include "MyClass.h"
+#include "Solution/Solution.h"
 
 int main(int argc, char **argv)
 {
   unique_ptr<int> uptr_i;   //创建空智能指针
-  uptr_i.reset(new int(3)); //绑定动态对象
+  uptr_i.reset(new int(8)); //绑定动态对象
 
   cout << *uptr_i;
 
-  cv::Mat img_src = cv::imread("./image/pikachu.jpg", 1);
-  cv::Mat img_sub = cv::imread("./image/pikachu-sub.jpg", 1);
+  cv::Mat img_src = cv::imread("../image/pikachu.jpg", 1);
+  cv::Mat img_sub = cv::imread("../image/pikachu-sub.jpg", 1);
   cv::namedWindow("src", 0);
   cv::namedWindow("sub", 0);
   cv::imshow("src", img_src);
