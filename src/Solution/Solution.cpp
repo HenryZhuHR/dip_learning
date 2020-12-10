@@ -4,3 +4,11 @@ void SolutionHello()
 {
     std::cout << "Solution Hello" << std::endl;
 }
+
+Solution::Solution(/* args */)
+{
+}
+
+Solution::~Solution()
+{
+}
