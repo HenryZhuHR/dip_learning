@@ -8,18 +8,18 @@
 #include <opencv2/core/core.hpp>
 #include <opencv2/opencv.hpp>
 #include <opencv2/features2d/features2d.hpp>
-using namespace cv;
+// using namespace cv;
 
 #include "MyClass.h"
 #include "Solution/Solution.h"
 
 int main(int argc, char **argv)
 {
-  std::unique_ptr<int> uptr_i;   //创建空智能指针
-  uptr_i.reset(new int(6)); //绑定动态对象
-  std::cout << *uptr_i<<std::endl;
+  std::unique_ptr<int> uptr_i; //创建空智能指针
+  uptr_i.reset(new int(6));    //绑定动态对象
+  std::cout << *uptr_i << std::endl;
 
-  MyClass myc=MyClass();
+  MyClass myc = MyClass();
   SolutionHello();
 
   cv::Mat img_src = cv::imread("../image/pikachu.jpg", 1);
@@ -38,6 +38,18 @@ int main(int argc, char **argv)
   cv::imshow("sub", img_gray_sub);
   cv::waitKey(1000);
 
-  
+  // cv::SIFT::create()
+  int nfeatures = 60;
+  cv::Ptr<cv::SIFT> detector = cv::SIFT::create(nfeatures);
+
+  std::vector<cv::KeyPoint> keypoints;
+  detector->detect(img_src, keypoints, cv::Mat());
+  std::cout << "Total keypoints: " << keypoints.size() << std::endl;
+
+  cv::Mat img_keypoints;
+  cv::drawKeypoints(img_src, keypoints, img_keypoints, cv::Scalar::all(-1), cv::DrawMatchesFlags::DEFAULT);
+  cv::imshow("img keypoint", img_keypoints);
+  cv::waitKey(5000);
+
   return 0;
 }
