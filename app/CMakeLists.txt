@@ -12,7 +12,10 @@ message(STATUS "    Opencv include: ${OpenCV_INCLUDE_DIRS}")
 include_directories(${PROJECT_SOURCE_DIR}/src/include)
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+message("CMAKE_BINARY_DIR:" ${PROJECT_SOURCE_DIR}/bin)
+
 # set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin) 
+
 add_executable(${PROJECT_NAME} 
     main.cpp
     )

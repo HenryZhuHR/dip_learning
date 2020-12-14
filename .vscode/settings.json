@@ -69,7 +69,8 @@
         "variant": "cpp"
     },
     // "terminal.integrated.shell.windows": "C:/Windows/System32/cmd.exe"
-    "terminal.integrated.shell.windows": "C:/Users/henryzhu/Programs/Git/bin/bash.exe"
+    "terminal.integrated.shell.windows": "C:/Users/henryzhu/Programs/Git/bin/bash.exe",
+    "python.pythonPath": "C:\\Users\\henryzhu\\Programs\\Python\\Python37\\python.exe"
     //C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe
     //C:/Windows/System32/md.exe
 
