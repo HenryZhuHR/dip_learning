@@ -17,11 +17,11 @@ message("CMAKE_BINARY_DIR:" ${PROJECT_SOURCE_DIR}/bin)
 # set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin) 
 
 add_executable(${PROJECT_NAME} 
-    main.cpp
+    match-sift.cpp
     )
 target_link_libraries(${PROJECT_NAME}
     ${OpenCV_LIBS}
-    src
-    Solution
+    # src
+    # Solution
     )
 
