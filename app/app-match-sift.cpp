@@ -22,7 +22,7 @@ int main(int argc, char** argv)
   cv::namedWindow("sub", 0);
   cv::imshow("src", img_src);
   cv::imshow("sub", img_sub);
-  cv::waitKey(1000);
+  cv::waitKey(500);
 
   cv::Mat img_gray_src;
   cv::Mat img_gray_sub;
@@ -30,7 +30,7 @@ int main(int argc, char** argv)
   cv::cvtColor(img_sub, img_gray_sub, cv::COLOR_BGR2GRAY);
   cv::imshow("src", img_gray_src);
   cv::imshow("sub", img_gray_sub);
-  cv::waitKey(1000);
+  cv::waitKey(500);
 
   // 特征点提取方法
   // cv::SIFT::create()
@@ -52,7 +52,7 @@ int main(int argc, char** argv)
   {
     cv::imshow("src", img_src_keypoints);
     cv::imshow("sub", img_sub_keypoints);
-    cv::waitKey(5000);
+    cv::waitKey(3000);
   }
 
   cv::Mat match_point_l, match_point_r;
