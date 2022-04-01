@@ -1,8 +1,6 @@
 
-# -------- 3rd-party lib --------
-# -- Opencv4
-set(OpenCV_DIR "C:/Users/henryzhu/OneDrive/Programming/Cpp/CppLibrary/Opencv/mingw-build/install")
-find_package( OpenCV 4 REQUIRED )
+# Opencv4 : OpenCV_DIR
+find_package(OpenCV 4 REQUIRED)
 include_directories( ${OpenCV_INCLUDE_DIRS} )
 link_directories(${OpenCV_LIB_DIRS})
 message(STATUS "OpenCV status:")
@@ -16,9 +14,7 @@ message("CMAKE_BINARY_DIR:" ${PROJECT_SOURCE_DIR}/bin)
 
 # set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin) 
 
-add_executable(${PROJECT_NAME} 
-    app-match-sift.cpp
-    )
+add_executable(${PROJECT_NAME} app-match-sift.cpp)
 target_link_libraries(${PROJECT_NAME}
     ${OpenCV_LIBS}
     # src

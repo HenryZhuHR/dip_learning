@@ -4,9 +4,7 @@ rm -rf bin
 mkdir bin
 cd build
 
-cmake \
-    -G "MinGW Makefiles" \
-    ..
+cmake ..
 make
 
 cd ../bin
@@ -14,4 +12,4 @@ cd ../bin
 
 echo ""
 
-./project.exe
+# ./project
