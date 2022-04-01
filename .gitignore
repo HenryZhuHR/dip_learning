@@ -1,8 +1,9 @@
-build
 image_processing-main
 
-*.exe
-*.lib
-*.dll
-*.a
-*.so
+# system
+.DS_Store
+
+# compile
+bin
+build
+

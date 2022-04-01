@@ -1,15 +1,10 @@
 rm -rf build
-mkdir build
-rm -rf bin
-mkdir bin
+mkdir build 
 cd build
 
+source /Users/henryzhu/program/opencv-4.5.5/bin/setup_vars_opencv4.sh
+
 cmake ..
-make
-
+make 
 cd ../bin
-# rm *.a
-
-echo ""
-
-# ./project
+# ./qt_demo

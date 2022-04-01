@@ -1,4 +1,3 @@
-
 # Opencv4 : OpenCV_DIR
 find_package(OpenCV 4 REQUIRED)
 include_directories( ${OpenCV_INCLUDE_DIRS} )
@@ -7,17 +6,14 @@ message(STATUS "OpenCV status:")
 message(STATUS "    Opencv version: ${OpenCV_VERSION}")   
 message(STATUS "    Opencv include: ${OpenCV_INCLUDE_DIRS}")
 
-include_directories(${PROJECT_SOURCE_DIR}/src/include)
+
+include_directories(${PROJECT_SOURCE_DIR}/include)
+link_directories(${PROJECT_SOURCE_DIR}/bin)
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
-message("CMAKE_BINARY_DIR:" ${PROJECT_SOURCE_DIR}/bin)
+message(" BINARY DIR:" ${PROJECT_SOURCE_DIR}/bin)
 
-# set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin) 
+option (MYSYMBOL "define my symbol" ON)
 
-add_executable(${PROJECT_NAME} app-match-sift.cpp)
-target_link_libraries(${PROJECT_NAME}
-    ${OpenCV_LIBS}
-    # src
-    # Solution
-    )
-
+add_executable(${PROJECT_NAME} main.cpp )
+target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS})

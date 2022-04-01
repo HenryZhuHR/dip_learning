@@ -1,3 +1,15 @@
 {
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "files.associations": {
+        "qgraphicsopacityeffect": "cpp",
+        "qapplication": "cpp",
+        "qpushbutton": "cpp",
+        "qgraphicsscene": "cpp",
+        "__config": "cpp",
+        "__nullptr": "cpp",
+        "qbuffer": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "Enabled",
+    "cmake.configureEnvironment": {
+        "CMAKE_PREFIX_PATH": "/Users/henryzhu/program/qt-6.3.0-beta3/lib/cmake"
+    }
 }
