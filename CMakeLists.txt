@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-project( project )
+project(opencv_demo)
 
 string(ASCII 27 Esc)
 set(ColourReset "${Esc}[m")

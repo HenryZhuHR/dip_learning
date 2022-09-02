@@ -1,13 +1,13 @@
 {
     "env": {
-        "OpenCV_HOME": "/Users/henryzhu/program/opencv-4.5.5"
+        "OpenCV_HOME": "~/program/opencv-4.5.5"
     },
     "configurations": [
         {
             "name": "Mac",
             "includePath": [
-                "${workspaceFolder}/**",
-                "${env:OpenCV_HOME}/include/opencv4"
+                "${workspaceFolder}/include",
+                "~/program/opencv-4.5.5/include/opencv4"
             ],
             "defines": [
                 "MYSYMBOL"
@@ -17,7 +17,7 @@
             ],
             "compilerPath": "/opt/homebrew/opt/llvm/bin/clang",
             "cStandard": "c17",
-            "cppStandard": "c++14",
+            "cppStandard": "c++17",
             "intelliSenseMode": "macos-clang-arm64",
             "configurationProvider": "ms-vscode.cmake-tools"
         }

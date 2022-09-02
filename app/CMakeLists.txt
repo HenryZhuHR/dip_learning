@@ -15,5 +15,9 @@ message(" BINARY DIR:" ${PROJECT_SOURCE_DIR}/bin)
 
 option (MYSYMBOL "define my symbol" ON)
 
+
 add_executable(${PROJECT_NAME} main.cpp )
 target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS})
+
+
+# add_executable(test test.cpp )
